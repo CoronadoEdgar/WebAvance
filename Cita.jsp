@@ -1,13 +1,159 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
-<html>
-    <head>
+<html> 
+<head>
+      <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <link rel="icon" type="image/png" href="img/favicon.png" />
+  
+                
+        <link href="css/styleCRUD2.css" rel="stylesheet">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <title>CLIENTES</title>
+        <title>donna</title>
+        
+          <link rel="stylesheet" href="css2/normalize.css">
+    <link rel="stylesheet" href="css2/sweetalert2.css">
+    <link rel="stylesheet" href="css2/material.min.css">
+    <link rel="stylesheet" href="css2/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css2/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css2/styleCRUD.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js2/jquery-1.11.2.min.js"><\/script>')
+    </script>
+    <script src="js2/material.min.js"></script>
+    <script src="js2/sweetalert2.min.js"></script>
+    <script src="js2/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js2/main.js"></script>
     </head>
-    <body>        
+    <body style="background: transparent">    
+         <section class="full-width navLateral">
+        <div class="full-width navLateral-bg btn-menu"></div>
+        <div class="full-width navLateral-body">
+
+            <figure class="full-width navLateral-body-tittle-menu">
+                <div>
+                    <img src="img/letra.png"  class="img-responsive">
+                </div>
+                <figcaption>
+                    <span>
+			 d o n n a<br>
+						
+					</span>
+                </figcaption>
+            </figure>
+            <nav class="full-width">
+                <ul class="full-width list-unstyle menu-principal">
+                    <li class="full-width">
+                        <a href="home.jsp" class="full-width">
+                            <div class="navLateral-body-cl">
+                                *
+                            </div>
+                            <div class="navLateral-body-cr">
+                                HOME
+                            </div>
+                        </a>
+                    </li>
+                                        <li class="full-width divider-menu-h"></li>
+
+                      <li class="full-width">
+                         <a href="Controlador?menu=Proveedor&accion=Listar" class="full-width">
+                            <div class="navLateral-body-cl">
+                                *
+                            </div>
+                            <div class="navLateral-body-cr" >
+                                PROVEEDORES
+                            </div>
+                        </a>
+                    </li> 
+                     <li class="full-width divider-menu-h"></li>
+                        <li class="full-width">
+                         <a href="Controlador?menu=Producto&accion=Listar" class="full-width">
+                            <div class="navLateral-body-cl">
+                                *
+                            </div>
+                            <div class="navLateral-body-cr">
+                                PRODUCTOS
+                            </div>
+                        </a>
+                    </li>
+                    <li class="full-width divider-menu-h"></li>
+                     <li class="full-width">
+                                <a href="Controlador?menu=Empleado&accion=Listar" class="full-width">
+                                    <div class="navLateral-body-cl">
+                                      *
+                                    </div>
+                                    <div class="navLateral-body-cr">
+                                        EMPLEADOS
+                                    </div>
+                                </a>
+                    </li>
+                     <li class="full-width">
+                        <a href="Controlador?menu=Cliente&accion=Listar" class="full-width">
+                            <div class="navLateral-body-cl">
+                                *
+                            </div>
+                            <div class="navLateral-body-cr">
+                                CLIENTES
+                            </div>
+                        </a>
+                    </li>
+                    
+                     <li class="full-width divider-menu-h"></li>
+                    <li class="full-width">
+                        <a href="Controlador?menu=NuevaVenta&accion=Listar" class="full-width">
+                            <div class="navLateral-body-cl">
+                                *
+                            </div>
+                            <div class="navLateral-body-cr">
+                                VENTAS
+                            </div>
+                        </a>
+                    </li>
+                    <li class="full-width divider-menu-h"></li>
+                    <li class="full-width">
+                        <a href="Controlador?menu=Servicio&accion=Listar" class="full-width">
+                            <div class="navLateral-body-cl">
+                                *
+                            </div>
+                            <div class="navLateral-body-cr">
+                                SERVICIOS
+                            </div>
+                        </a>
+                    </li>
+                    <li class="full-width divider-menu-h"></li>
+                   <li class="full-width">
+                        <a href="Validar?accion=Salir"> 
+                            <div class="navLateral-body-cl">
+                                *
+                            </div>
+                            <div class="navLateral-body-cr">
+                                SALIR
+                            </div>
+                            
+                        </a>
+                        
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+     <section class="full-width pageContent">
+       
+        <section class="full-width header-well">
+            <div class="full-width header-well-icon">
+                <i>  <img class="logo" src="img/donnaLogo.png" alt="logo" style="max-width: 300px"></i>
+            </div>
+            <div class="full-width header-well-text" style="align-content: right">
+                <p class="text-condensedLight">
+                <h2>CITAS</h2>
+                </p>
+            </div>
+        </section>
+        <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+        
         <div class="d-flex">
             <div class="col-sm-4">
                 <div class="card">
@@ -15,19 +161,19 @@
                         <form action="Controlador?menu=Cita" method="POST">
                            
                             <div class="form-group">
-                                <label>Id Cliente</label>
+                                <label>ID CLIENTE</label>
                                 <input type="text" value="${cita.getIdCliente()}" name="txtIdCliente" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label>Fecha Cita </label>
+                                <label>FECHA CITA</label>
                                 <input type="date" value="${cita.getFecha()}" name="txtFecha" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label>Hora</label>
+                                <label>HORA</label>
                                 <input type="text" value="${cita.getHora()}" name="txtHora" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label>Estado</label>
+                                <label>ESTADO</label>
                                 <input type="text" value="${cita.getEstado()}" name="txtEstado" class="form-control">
                             </div>
                             

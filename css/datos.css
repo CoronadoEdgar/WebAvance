@@ -1,0 +1,99 @@
+.nombre {
+    color: white;
+}
+
+.containers {
+    position: relative;
+    width: 1000px;
+    margin: 150px auto 0;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 440px;
+    grid-gap: 40px;
+}
+
+.containers .card {
+    position: relative;
+    background: rgb(19, 18, 18);
+    overflow: hidden;
+    border-radius: 1px;
+    transition: 0.5s;
+}
+
+.containers .card .img-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 120%;
+    transition: 0.5s;
+}
+
+.containers .card:hover .img-box {
+    opacity: 0.5;
+}
+
+.containers .card .img-box img {
+    width: 100%;
+}
+
+.containers .card .content {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    bottom: -100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.containers .card:hover .content {
+    bottom: 0;
+}
+
+.containers .card:nth-child(1) .content {
+    background: linear-gradient(0deg, #d874c7, transparent);
+}
+
+.containers .card:nth-child(2) .content {
+    background: linear-gradient(0deg, #d874c7, transparent);
+}
+
+.containers .card:nth-child(3) .content {
+    background: linear-gradient(0deg, #d874c7, transparent);
+}
+
+.social-icon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.social-icon li {
+    display: inline-block;
+    list-style: none;
+}
+
+.social-icon li a {
+    background: #f9f9f9;
+    border-radius: 100%;
+    color: #3d3d3f;
+    cursor: pointer;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    margin: 0px 6px 10px 6px;
+}
+
+.social-icon li a:hover {
+    background: #d7b065;
+    color: #ffffff;
+    transform: scale(1.1);
+}

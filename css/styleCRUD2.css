@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import 'https://fonts.googleapis.com/css?family=Fauna+One';
+
+h2{
+    text-align: center;
+    color: #ab5b8c;
+    font-family: 'Fauna One', serif;
+   
+}
+
+label, thead{
+    font-family: 'Fauna One', serif;
+    font-size: 14px;
+    
+    color: #006064;
+}
+
+P{
+    color: #fff;
+}
+
+figure{
+     font-family: 'Fauna One', serif;
+    font-size: 15px;
+    size: 30px;
+    
+    color: #ab5b8c;
+}
